@@ -1,0 +1,16 @@
+schema_version = 1
+name = "writing"
+description = "Example reusable Writing Harness with a Harness-local Node toolchain managed by mise."
+harness_path = "."
+runtime_type = "native"
+executable = "claude"
+args = []
+config_directory = "profiles/writing/config"
+config_env = "CLAUDE_CONFIG_DIR"
+dependencies = ["git"]
+
+[environment]
+provider = "mise"
+inherit = []
+
+[environment.set]

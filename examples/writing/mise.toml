@@ -1,0 +1,5 @@
+[tools]
+node = "22"
+
+[env]
+WRITING_HARNESS = "writing"

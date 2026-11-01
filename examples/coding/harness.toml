@@ -1,0 +1,18 @@
+schema_version = 1
+name = "coding"
+description = "Example reusable Coding Harness using Claude Code."
+harness_path = "."
+runtime_type = "native"
+executable = "claude"
+args = []
+config_directory = "profiles/coding/config"
+config_env = "CLAUDE_CONFIG_DIR"
+dependencies = ["git"]
+
+[environment]
+provider = "native"
+# PATH, HOME, and locale/terminal variables are inherited as the minimal baseline.
+# Add credential variable names here only when this Harness needs them.
+inherit = []
+
+[environment.set]
